@@ -161,8 +161,16 @@ nav {
  * --------------------------------------------------------------------------------------------------------------------------- */
 .parallax-container {
   height: 400px; }
+  @media screen and (min-width: 601px) and (max-width: 1000px) {
+    .parallax-container {
+      height: 300px;
+      box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75); } }
+  @media screen and (max-width: 600px) {
+    .parallax-container {
+      height: 200px;
+      box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75); } }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   .no-parallax {
     height: 300px; } }
 @media screen and (max-width: 600px) {
@@ -170,7 +178,7 @@ nav {
     height: 200px; } }
 .no-parallax img {
   height: 100%;
-  width: 140%; }
+  width: 160%; }
 
 /* ---------------------------------------------------------------------------------------------------------------------------
  * home
@@ -237,11 +245,11 @@ nav {
   font-weight: bold;
   text-align: left;
   margin-bottom: 5px; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (min-width: 601px) and (max-width: 1000px) {
     #about h5 {
       text-align: center;
       width: 100%; } }
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   #about ul {
     text-align: center; } }
 #about .company-name {
