@@ -1,278 +1,740 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--Import Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Droid+Sans:400,700" rel="stylesheet">
-    <!--Import Google Icon Font & Font Awesome-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://use.fontawesome.com/aec5147c0b.js"></script>
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/vendor/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/vendor/animate.min.css"  media="screen"/>
-    <link type="text/css" rel="stylesheet" href="css/cihan.min.css"  media="screen"/>
+<html lang="en">
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="dist/fonts.css">
+  <link rel="stylesheet" type="text/css" href="dist/font-awesome.css">
+  <title>Cihan Baran | Front-End Developer</title>
+</head>
 
-    <title>Cihan Baran | Junior Front-End Developer</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="theme-color" content="#990e0c"/>
-  </head>
-
-  <body>
-    <header>
-      <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper">
-            <ul id="nav-mobile" class="hide-on-med-and-down">
-              <li>-&nbsp;&nbsp;</li>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li>&nbsp;&nbsp;-</li>
-            </ul>
-            <a class="mobile-logo hide-on-large-only" href="#home">CB</a>
-          </div>
-        </nav>
-      </div>
-
-      <ul id="slide-out" class="side-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+<body>
+  <!-- header -->
+  <header class="main-header">
+    <nav class="main-nav">
+      <ul class="link-list">
+        <li class="link-item">
+          <a class="link" href="#">Home</a>
+        </li>
+        <li class="link-item">
+          <a class="link" href="#">Projects</a>
+        </li>
+        <li class="link-item">
+          <a class="link" href="#">Experience</a>
+        </li>
+        <li class="link-item">
+          <a class="link" href="#">Skills</a>
+        </li>
+        <li class="link-item">
+          <a class="link" href="#">About</a>
+        </li>
+        <li class="link-item">
+          <a class="link" href="#">Contact</a>
+        </li>
       </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only hamburger-icon"><i class="material-icons">menu</i></a>
-
-
-    </header>
-
-    <main>
-      <!--Home-->
-      <div id="home" class="section scrollspy white">
-        <div id="particles-js"></div>
-        <div class="row container">
-          <div class="title-wrapper">
-            <h4 class="animate-text">Cihan Baran</h4>
-            <h5 class="animate-text">Junior</h5>
-            <h4 class="animate-text">Front-End Developer</h4>
-            <h4 class="animate-text">New Website is Coming...</h4>
-          </div>
+    </nav>
+  </header>
+  <main role="main" class="main">
+    <!-- home-page -->
+    <section class="page home-page">
+      <div class="container">
+        <!-- hero -->
+        <div class="hero">
+          <h1 class="title">Cihan Baran
+            <span class="subtitle">Front-End<br>Web Developer</span>
+          </h1>
+          <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut
+            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper
+            suscipit lobortis nisl ut ali- quip ex ea commodo.</p>
         </div>
       </div>
-
-      <div class="parallax-container">
-        <div class="parallax"><img src="images/parallax/paris.jpg"></div>
-        <div class="no-parallax"><img src="images/no-parallax/paris-np.jpg"></div>
+      <!-- hero-skills -->
+      <div class="hero-skills">
+        <ul class="list">
+          <li class="item">Html5</li>
+          <li class="item">Css3</li>
+          <li class="item">Npm</li>
+          <li class="item">Git</li>
+          <li class="item highlight">Js</li>
+          <li class="item">Gulp</li>
+        </ul>
       </div>
-
-
-      <!--Projects-->
-      <div id="projects" class="section scrollspy white">
-        <div class="row container">
-          <h2 class="header">Projects</h2>
-          <div class="col s12 m4">
-            <img class="responsive-img project-header" src="images/projects/fantasy-express-text.png" alt="Fantasy Express Art Text">
-          </div>
-          <div class="col s12 m8">
-            <img class="responsive-img" src="images/projects/fantasy-express-macbook.png" alt="Macbook Fantasy Express">
-          </div>
-          <div class="col s12">
-            <p>
-              Fantasy Express is a tool for <a href="https://fantasy.premierleague.com/" target="_blank">Fantasy Premier League</a> players - a group of well over 4 million people.
-              Fantasy Express helps players optimize their team selections by providing fixture difficulties, players stats and teams form guide in a flexible and dynamic web app.
-            </p>
-            <p>I contributed with web design, HTML, Sass and Angular2 development.</p>
-            <a class="project-button" href="http://www.fantasy.express" target="_blank">- See the Project -</a>
-          </div>
+    </section>
+    <!-- projects-page -->
+    <section class="page projects-page">
+      <!-- projects -->
+      <div class="projects">
+        <h1 class="header">PROJECTS</h1>
+        <div class="container container-projects">
+          <ul class="list">
+            <!-- item -->
+            <li class="item">
+              <a class="link" href="#">
+                <h5 class="title">Industrial Designers Association Website</h5>
+                <img src="dist/img/enta.jpg" alt="enta homepage screen">
+              </a>
+            </li>
+            <!-- item -->
+            <li class="item">
+              <a class="link" href="#">
+                <h5 class="title">E-Bursum Social Startup</h5>
+                <img src="dist/img/taze-e-bursum.jpg" alt="e-bursum homepage screen">
+              </a>
+            </li>
+            <!-- item -->
+            <li class="item">
+              <a class="link" href="#">
+                <h5 class="title">IOX Trend Reports</h5>
+                <img src="dist/img/iox-trend-reports.jpg" alt="iox trend reports page screen">
+              </a>
+            </li>
+            <!-- item -->
+            <li class="item">
+              <a class="link" href="#">
+                <h5 class="title">IOX Blend the Trend</h5>
+                <img src="dist/img/iox-blend-the-trend.jpg" alt="iox blend the trend page screen">
+              </a>
+            </li>
+            <!-- item -->
+            <li class="item">
+              <a class="link" href="#">
+                <h5 class="title">MikroX Pre-Accountancy Website</h5>
+                <img src="dist/img/taze-mikrox.jpg" alt="mikrox website homepage screen">
+              </a>
+            </li>
+            <!-- item -->
+            <li class="item">
+              <a class="link" href="#">
+                <h5 class="title">Userspots Fiat Case Study</h5>
+                <img src="dist/img/taze-fiat.jpg" alt="fiat case study homepage screen">
+              </a>
+            </li>
+            <!-- item -->
+            <li class="item">
+              <a class="link" href="#">
+                <h5 class="title">Userspots Tofaş Case Study</h5>
+                <img src="dist/img/taze-tofas.jpg" alt="tofaş case study homepage screen">
+              </a>
+            </li>
+            <!-- item -->
+            <li class="item">
+              <a class="link" href="#">
+                <h5 class="title">Userspots UXCamp</h5>
+                <img src="dist/img/taze-uxcamp.jpg" alt="uxcamp homepage screen">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+    </section>
 
-
-      <div class="parallax-container">
-        <div class="parallax"><img src="images/parallax/tallinn-offset.jpg"></div>
-        <div class="no-parallax"><img src="images/no-parallax/tallinn-np.jpg"></div>
-      </div>
-
-
-      <!--Skills-->
-      <div id="skills" class="section scrollspy white">
-        <div class="row container">
-          <h2 class="header">Skills</h2>
-          <div class="col m6">
-            <p>First of all I have eye for design and knowledge of graphic design principles.
-              I know slicing and coding website templates using tools and technologies like Photoshop,
-              Illustator (for SVG), HTML5 and CSS3. I like using Bootstrap and Materialize UI frameworks on my projects and
-              I am familiar with CSS metodologies such as BEM and Smacss for scalable and maintainable projects.
-              I have basic JavaScript knowledge and I am able to use jQuery libraries. I always consider
-              UX factors in my projects. Lastly, I am familiar with AngularJs 2 front-end framework.
-            </p>
-            <p>I use Atom text editor and Git. <a href="https://github.com/c1hanbaran" target="_blank">Check for my GitHub</a></p>
-
+    <!-- project-1 enta-->
+    <section class="page project-page">
+      <div class="container">
+        <div class="project">
+          <div class="content">
+            <h2 class="title">Industrial Designers Association Website</h1>
+              <p class="client">Client: ENTA</p>
+              <p class="employer">Employer: Freelance</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing
+                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                enim ad minim.</p>
+              <a class="link" href="https://www.enta.org.tr" target="_blank">enta.org.tr</a>
           </div>
-          <div class="col m6">
-            <h5>Coding Skills</h5>
-            <ul class="coding-skills">
-              <li><img src="images/skills/html5.png" alt="HTML5 logo with red filter"></li>
-              <li><img src="images/skills/css3.png" alt="CSS3 logo logo with red filter"></li>
-              <li><img src="images/skills/sass.png" alt="Sass logo with red filter"></li>
-              <li><img src="images/skills/materialize.png" alt="Materialize logo with red filter"></li>
-              <li><img src="images/skills/bootstrap.png" alt="Bootstrap logo logo with red filter"></li>
-              <li><img src="images/skills/js.png" alt="JavaScript logo with red filter"></li>
-              <li><img src="images/skills/angular2.png" alt="AngularJS logo with red filter"></li>
-            </ul>
-            <h5>Design Skills</h5>
-            <ul class="design-skills">
-              <li><img src="images/skills/ps.png" alt="Adobe Photoshop logo with red filter"></li>
-              <li><img src="images/skills/ai.png" alt="Adobe illustrator logo with red filter"></li>
-            </ul>
-            <h5>Other Tools I Use</h5>
-            <ul class="tools">
-              <li><img src="images/skills/git.png" alt="Git logo with red filter"></li>
-              <li><img src="images/skills/npm.png" alt="Node Package Manager logo with red filter"></li>
-              <li><img src="images/skills/atom.png" alt="Atom Text Editor logo with red filter"></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="parallax-container">
-        <div class="parallax"><img src="images/parallax/amsterdam-offset.jpg"></div>
-        <div class="no-parallax"><img src="images/no-parallax/amsterdam-np.jpg"></div>
-      </div>
-
-
-      <!--About-->
-      <div id="about" class="section scrollspy white">
-        <div class="row container">
-          <h2 class="header">About</h2>
-          <div class="col s12 l4 offset-l1 center">
-            <img class="responsive-img" src="images/cihan-baran.png" alt="Cihan Baran | Front End Developer">
-          </div>
-          <div class="col m12 l6">
-            <ul>
-              <li class="experience">
-                <h5>Experience</h5>
-                <span class="company-name">Freelance - Eskişehir</span>
-                <div>(Front-End Developer from July 2018 to Current)</div>
-                <span class="company-name">Taze - İstanbul</span>
-                <div>(Front-End Developer from September 2017 to July 2018)</div>
-                <span class="company-name">Devtailor OÜ - Estonia</span>
-                <div>(Erasmus Intern from July 2016 to February 2017)</div>
-                <span class=company-name>Piton R&amp;D and Software House - Turkey</span>
-                <div>(Intern from February 2016 to June 2016)</div>
-              </li>
-              <li class="education">
-                <h5>Education</h5>
-                <p>Eskişehir Osmangazi University - Turkey</br>
-                Mathematics and Computer Science Bachelor Degree (2017)</br>
-                New University of Lisbon - Portugal (Erasmus Exchange - 2015)</br>
-                </p>
-              </li>
-              <li class="language">
-                <h5>Language</h5>
-                <p>My native language is <span>Turkish</span> and I speak fluent <span>English.</span></p>
-              </li>
-          </div>
-          <div class="col s12 about-me">
-            <p>
-               Hey! I am Cihan | Junior Front-End developer from Turkey. I am highly interested in web design &amp; development especially since 2015 and have one year of internship experience in the sector.
-               My first internship was in <a href="http://piton.com.tr/" target="_blank">Piton R&amp;D and Software House</a>, mostly focused on some retouch tasks on websites using HTML, CSS and creating some visual contents with Photoshop. It  was a good chance for me
-               learning and practicing design basics in real projects.
-            </p>
-            <p>
-               My second internship and first international working experience was in <a href="http://devtailor.com/" target="_blank">Devtailor</a> based in Tallinn Estonia. I have experienced how to design a web application with the approach of MVP (Minimum Viable Product),
-               worked with some low-fi prototypes for designing apps rapidly by considering UX. I had a chance to design a new website and I started to use tools like Git and Node Package Manager in my projects, improved my CSS development speed and process.
-               On the other hand, I learnt basic concepts of AngularJs 2 which is a component based front-end framework and I created a few new UI components with this framework.
-            </p>
-            <p>
-              My international experiences in both Portugal and Estonia were amazing. Living and working in another country is tough but also a life changing and improving experience.
-              My biggest hobby is photography. Especially visual arts are highly related with each other. They are based on very similar priciples. I like expressing my feelings via visual arts and learning new things as possible as I can, using them on my projects as i did in my website. You can take a look for more from <a href="https://www.flickr.com/photos/cihanbaran" target="_blank">my flickr.</a>
-            </p>
-          </div>
-          <div class="col s12 testimonials">
-            <h5>Testimonials</h5>
-            <div class="testimonial">
-              <div class="testimonial-content">
-                <p>
-                   Cihan is friendly, calm and easily adaptive to new environments. He speaks good English and has
-                   international background. As a developer his strengths are in HTML and modern CSS including usage of preprocessors.
-                   Despite having little Javascript background he was able to contribute to our Angular2 development in addition to creating visuals
-                   from scratch. As a web designer he benefits from his passion towards photography.
-                </p>
-              </div>
-              <span class="reference-name">
-                Robert Pallas<br>
-                Devtailor OÜ
-              </span>
+          <div class="screen-mockup">
+            <div class="part-1">
+              <figure class="img-container">
+                <img src="dist/img/enta.jpg" alt="enta homepage screen">
+              </figure>
             </div>
-            <div class="testimonial">
-              <div class="testimonial-content">
-                <p>
-                  We have met with Cihan from the student organisation in our university. He joined our company as an intern and contributed some of our projects. The bonds which we have created through team work as we did in the student organisation before, continues with him.
-                </p>
-              </div>
-              <span class="reference-name">
-                Hakan Diril<br>
-                Piton R&amp;D and Software House
-              </span>
-            </div>
-
-
+            <div class="part-2"></div>
+            <div class="part-3"></div>
+            <div class="part-4"></div>
           </div>
-
-
         </div>
       </div>
-
-
-      <div class="parallax-container">
-        <div class="parallax"><img src="images/parallax/berlin.jpg"></div>
-        <div class="no-parallax"><img src="images/no-parallax/berlin-np.jpg"></div>
-      </div>
-
-
-      <!--Contact-->
-      <div id="contact" class="section scrollspy white">
-        <div class="row container">
-          <h2 class="header">Contact</h2>
-          <p>
-            I like visiting the places I have never seen before in my life, meeting new people, learning and inspiring from them. I would like to work in a place which is providing guidence and encouraging the young professionals.
-          </p>
-          <div class="col s12 m4 contact-item">
-            <i class="fa fa-envelope fa-3x"></i>
-            <p>cihanbaran@gmail.com</p>
+    </section>
+    <!-- project-2 e-bursum  -->
+    <section class="page project-page">
+      <div class="container">
+        <div class="project">
+          <div class="content">
+            <h2 class="title">E-Bursum Socail Startup</h1>
+              <p class="client">Client: E-Bursum</p>
+              <p class="employer">Employer: Taze</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing
+                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                enim ad minim.</p>
+              <a class="link" href="https://www.e-bursum.com" target="_blank">e-bursum.com</a>
           </div>
-          <div class="col s12 m4 contact-item">
-            <a href="http://www.linkedin.com/in/cihanbaran" target="_blank">
-              <i class="fa fa-linkedin-square fa-3x"></i>
-              <p>/in/cihanbaran</p>
+          <div class="screen-mockup">
+            <div class="part-1">
+              <figure class="img-container">
+                <img src="dist/img/taze-e-bursum.jpg" alt="e-bursum homepage screen">
+              </figure>
+            </div>
+            <div class="part-2"></div>
+            <div class="part-3"></div>
+            <div class="part-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project-3 trend-reports -->
+    <section class="page project-page">
+      <div class="container">
+        <div class="project">
+          <div class="content">
+            <h2 class="title">IOX Trend Reports Page</h1>
+              <p class="client">Client: IOX</p>
+              <p class="employer">Employer: Freelance</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing
+                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                enim ad minim.</p>
+              <a class="link" href="https://www.ioxdigital.com/trend-reports" target="_blank">ioxdigital.com/trend-reports</a>
+          </div>
+          <div class="screen-mockup">
+            <div class="part-1">
+              <figure class="img-container">
+                <img src="dist/img/iox-trend-reports.jpg" alt="iox blend the trend page screen">
+              </figure>
+            </div>
+            <div class="part-2"></div>
+            <div class="part-3"></div>
+            <div class="part-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project-4 blend-the-trend -->
+    <section class="page project-page">
+      <div class="container">
+        <div class="project">
+          <div class="content">
+            <h2 class="title">IOX Blend the Trend Page</h1>
+              <p class="client">Client: IOX</p>
+              <p class="employer">Employer: Freelance</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing
+                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                enim ad minim.</p>
+              <a class="link" href="https://www.ioxdigital.com/blend-the-trend" target="_blank">ioxdigital.com/blend-the-trend</a>
+          </div>
+          <div class="screen-mockup">
+            <div class="part-1">
+              <figure class="img-container">
+                <img src="dist/img/iox-blend-the-trend.jpg" alt="iox blend the trend page screen">
+              </figure>
+            </div>
+            <div class="part-2"></div>
+            <div class="part-3"></div>
+            <div class="part-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project-5 microx -->
+    <section class="page project-page">
+      <div class="container">
+        <div class="project">
+          <div class="content">
+            <h2 class="title">MikroX Pre-Accountacy Website</h1>
+              <p class="client">Client: MikroX</p>
+              <p class="employer">Employer: Taze</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing
+                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                enim ad minim.</p>
+              <a class="link" href="https://www.mikrox.com.tr" target="_blank">mikrox.com.tr</a>
+          </div>
+          <div class="screen-mockup">
+            <div class="part-1">
+              <figure class="img-container">
+                <img src="dist/img/taze-mikrox.jpg" alt="mikrox website homepage screen">
+              </figure>
+            </div>
+            <div class="part-2"></div>
+            <div class="part-3"></div>
+            <div class="part-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project-6 fiat-case-study -->
+    <section class="page project-page">
+      <div class="container">
+        <div class="project">
+          <div class="content">
+            <h2 class="title">Userspots Fiat Case Study</h1>
+              <p class="client">Client: Userspots</p>
+              <p class="employer">Employer: Taze</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing
+                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                enim ad minim.</p>
+              <a class="link" href="https://www.userspots.com/cases/fiat" target="_blank">userspots.com/cases/fiat</a>
+          </div>
+          <div class="screen-mockup">
+            <div class="part-1">
+              <figure class="img-container">
+                <img src="dist/img/taze-fiat.jpg" alt="fiat case study homepage screen">
+              </figure>
+            </div>
+            <div class="part-2"></div>
+            <div class="part-3"></div>
+            <div class="part-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project-7 tofas-case-study-->
+    <section class="page project-page">
+      <div class="container">
+        <div class="project">
+          <div class="content">
+            <h2 class="title">Userspots Tofaş Case Study</h1>
+              <p class="client">Client: Userspots</p>
+              <p class="employer">Employer: Taze</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing
+                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                enim ad minim.</p>
+              <a class="link" href="http://www.userspots.com/tofas-intranet/" target="_blank">userspots.com/tofas-intranet</a>
+          </div>
+          <div class="screen-mockup">
+            <div class="part-1">
+              <figure class="img-container">
+                <img src="dist/img/taze-tofas.jpg" alt="tofaş case study homepage screen">
+              </figure>
+            </div>
+            <div class="part-2"></div>
+            <div class="part-3"></div>
+            <div class="part-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project-8 uxcamp-->
+    <section class="page project-page">
+      <div class="container">
+        <div class="project">
+          <div class="content">
+            <h2 class="title">Userspots UXCamp</h1>
+              <p class="client">Client: Userspots</p>
+              <p class="employer">Employer: Taze</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing
+                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                enim ad minim.</p>
+              <a class="link" href="https://www.userspots.com/uxcamp" target="_blank">userspots.com/uxcamp</a>
+          </div>
+          <div class="screen-mockup">
+            <div class="part-1">
+              <figure class="img-container">
+                <img src="dist/img/taze-uxcamp.jpg" alt="uxcamp homepage screen">
+              </figure>
+            </div>
+            <div class="part-2"></div>
+            <div class="part-3"></div>
+            <div class="part-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- experience-page -->
+    <section class="page experience-page">
+      <div class="container">
+        <!-- experience -->
+        <div class="experience">
+          <!-- content -->
+          <div class="content">
+            <ul class="list">
+              <li class="item">
+                <h2 class="title">Freelance - Eskişehir</h2>
+                <p class="duration">Front-End Developer, July 2018 to Current</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis laoreet turpis,
+                  nec aliquam dui cursus vel.</p>
+              </li>
+              <li class="item">
+                <h2 class="title">Taze - İstanbul</h2>
+                <p class="duration">Front-End Developer, September 2017 to July 2018</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis laoreet turpis,
+                  nec aliquam dui cursus vel.</p>
+              </li>
+              <li class="item">
+                <h2 class="title">Devtailor - Estonia</h2>
+                <p class="duration">Internship, July 2016 to February 2017</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis laoreet turpis,
+                  nec aliquam dui cursus vel.</p>
+              </li>
+            </ul>
+          </div>
+          <!-- exblock -->
+          <div class="exblock">
+            <p class="text-line">
+              <span class="letter">E</span>
+              <span class="letter stroke">x</span>
+            </p>
+            <p class="text-line">
+              <span class="letter">p</span>
+              <span class="letter stroke">e</span>
+              <span class="letter">r</span>
+              <span class="letter stroke">i</span>
+            </p>
+            <p class="text-line">
+              <span class="letter stroke">e</span>
+              <span class="letter">n</span>
+              <span class="letter stroke">c</span>
+              <span class="letter">e</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills-page -->
+    <section class="page skills-page">
+      <div class="container">
+        <!-- skills -->
+        <div class="skills">
+          <!-- skillset -->
+          <div class="skillset">
+            <h1 class="colorful-header">
+              <span class="letter type-1">S</span>
+              <span class="letter type-2">k</span>
+              <span class="letter type-3">i</span>
+              <span class="letter type-4">l</span>
+              <span class="letter type-5">l</span>
+              <span class="letter type-6">s</span>
+            </h1>
+            <ul class="list">
+              <li class="item">
+                <h2 class="title">Coding <br> Skills</h2>
+                <p class="subtitle">Html, Css, Sass, Javascript, Jquery, Gsap, React, Design Patterns</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae magna eu urna
+                  blandit varius sed nec nibh.
+                  Vestibulum bibendum, diam ac lacinia convallis, orci velit lobortis augue, et condimentum sem quam
+                  vel nisl. In eget
+                  interdum leo, eu interdum nibh.</p>
+              </li>
+              <li class="item">
+                <h2 class="title">Coding <br> Tools</h2>
+                <p class="subtitle">Gulp, Npm, Git, Iterm</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae magna eu urna
+                  blandit varius sed nec nibh.
+                  Vestibulum bibendum, diam ac lacinia convallis, orci velit lobortis augue, et condimentum sem quam
+                  vel nisl. In eget
+                  interdum leo, eu interdum nibh.</p>
+              </li>
+              <li class="item">
+                <h2 class="title">Other <br> Tools</h2>
+                <p class="subtitle">Ps, Ai, Trello, Google Drive/Docs</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae magna eu urna
+                  blandit varius sed nec nibh.
+                  Vestibulum bibendum, diam ac lacinia convallis, orci velit lobortis augue, et condimentum sem quam
+                  vel nisl. In eget
+                  interdum leo, eu interdum nibh.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about-page -->
+    <section class="page about-page">
+      <div class="container">
+        <!-- about -->
+        <div class="about">
+          <div class="wrapper">
+            <!-- quot-box -->
+            <div class="quot-box">
+              <div class="content">
+                <p class="text">“Most people overestimate what they
+                  can do in one year and underestimate what
+                  they can do in ten years.”</p>
+                <p class="teller">Bill Gates</p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <!-- about-box -->
+            <div class="about-box">
+              <h1 class="title">About Me</h1>
+              <p class="text">My first international working experience was in Devtailor based in Tallinn, Estonia. I
+                have experienced how to design a
+                web application with the approach of MVP (Minimum Viable Product), worked with some low-fi prototypes
+                for designing apps
+                rapidly by considering UX. I had a chance to design a new website and I started to use tools like Git
+                and Node Package
+                Manager in my projects, improved my CSS development speed and process. This was a good ‘welcome’ to the
+                industry in
+                2017.</p>
+              <p class="text">2018 was the year that i started to get involved writing more JavaScript and i covered
+                very important
+                concepts with the
+                language and learned a couple of design patterns. It helped me a lot to organize and maintain my code.I
+                have delivered
+                many tiny and a couple of mid-sized web projects. I have attended as an instructor to the fron-end camp
+                2018, organised
+                by Taze. Check out my presentation.
+              </p>
+              <p class="text">In the short term respectively I am going to focus writing more ES2015 JS, start writing
+                React apps,
+                design and
+                developing more web animations, release my first front-end package and keep designing websites,
+                posters, taking photos
+                and running as a hobby.
+              </p>
+              <ul class="list">
+                <li class="item">
+                  <h2 class="subtitle">Education</h2>
+                  <p class="info">Eskişehir Osmangazi University - Math. and Computer Science - 2017</p>
+                  <p class="info">New University of Lisbon - Erasmus Exchange Program - 2014</p>
+                </li>
+                <li class="item">
+                  <h2 class="subtitle">Language</h2>
+                  <p class="info">Turkish - Native</p>
+                  <p class="info">English - Fluent</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact-page -->
+    <footer class="page contact-page">
+      <div class="contact">
+          <div class="contact-box">
+            <h1 class="title">Contact</h1>
+            <p class="text">cihanbaran@gmail.com</p>
+          </div>
+          <!-- grid-row 1-->
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <!-- grid-row 2-->
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col">
+            <!-- twitter -->
+            <a class="social-box type-2" href="https://twitter.com/cihanbarandev" target="_blank">
+              <i class="fab fa-twitter"></i>
             </a>
           </div>
-          <div class="col s12 m4 contact-item">
-            <a href="http://www.instagram.com/c1hanbaran" target="_blank">
-              <i class="fa fa-instagram fa-3x"></i>
-              <p>/c1hanbaran</p>
+          <div class="grid-col"></div>
+          <!-- grid-row 3-->
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col">
+            <!-- linkedin -->
+            <a class="social-box" href="https://linkedin.com/in/cihanbaran/" target="_blank">
+              <i class="fab fa-linkedin"></i>
             </a>
           </div>
-        </div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <!-- grid-row 4-->
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <!-- grid-row 5-->
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <!-- grid-row 6-->
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col">
+            <!-- github -->
+            <a class="social-box" href="https://github.com/c1hanbaran" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <!-- grid-row 7-->
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <!-- codepen-->
+          <div class="grid-col">
+            <a class="social-box" href="https://codepen.io/cihanbarandev/" target="_blank">
+              <i class="fab fa-codepen"></i>
+            </a>
+          </div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col">
+            <!-- instagram -->
+            <a class="social-box" href="https://instagram.com/cihanbarandev" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <!-- grid-row 8-->
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col">
+            <!-- flickr -->
+            <a class="social-box" href="https://www.flickr.com/photos/cihanbaran" target="_blank">
+              <i class="fab fa-flickr"></i>
+            </a>
+          </div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <!-- grid-row 9-->
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
+          <div class="grid-col"></div>
       </div>
-      <div id="screen-size-check"></div>
-    </main>
+    </footer>
+  </main>
+  <script src="dist/bundle.js"></script>
+</body>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-    <script type="text/javascript" src="js/textillate/jquery.lettering.min.js"></script>
-    <script type="text/javascript" src="js/textillate/jquery.textillate.min.js"></script>
-
-    <script type="text/javascript" src="js/particles.min.js"></script>
-
-    <script type="text/javascript" src="js/cihan.min.js"></script>
-  </body>
 </html>

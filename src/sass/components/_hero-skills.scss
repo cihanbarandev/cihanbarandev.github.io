@@ -1,0 +1,41 @@
+// hero-skills
+.hero-skills {
+    position: absolute;
+    top: -15px;
+    right: 5%;
+
+    @include md {
+        right: -18%;
+    }
+
+    .list {
+        height: 0;
+        user-select: none;
+
+        @include md {
+            opacity: 0.1;
+        }
+
+        @include xs {
+            opacity: 0.1;
+            transform: 0;
+        }
+    }
+
+    .item {
+        font-family: 'AvantGarde', sans-serif;
+        font-weight: bold;
+        font-size: 15vh;
+        line-height: 1;
+        margin-bottom: 2.2vh;
+        text-align: center;
+
+        &.highlight {
+            color: $color-blue;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

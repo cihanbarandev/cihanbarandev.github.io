@@ -1,0 +1,88 @@
+// contact
+.contact {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .grid-col {
+        border: 0.09vw solid #efefef;
+
+        &:nth-of-type(n+30) {
+            background: red;
+
+            @include xs {
+                display: none;
+            }
+        }
+    }
+
+    @include md {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(16, 1fr);
+    }
+
+    @include xs {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+
+    }
+
+}
+
+
+// social-box
+.social-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: $color-black;
+
+    &.type-2 {
+        background: none;
+        transform: translate(50%, -50%);
+
+        i {
+            color: $color-black;
+        }
+    }
+
+    &:hover {
+        opacity: 0.8;
+        transition: all 100ms ease;
+    }
+
+    i {
+        font-size: 4vw;
+        color: $color-white-2;
+
+    }
+}
+
+// contact-box
+.contact-box {
+    width: 25%;
+    position: absolute;
+    top: 35%;
+    left: 13.5%;
+    font-size: 1.4vw;
+
+    @include md {
+        font-size: 3vw
+    }
+
+    @include xs {
+        width: 60%;
+        font-size: 5vw;
+    }
+
+    .title {
+        font-family: 'AvantGarde', sans-serif;
+        font-weight: bold;
+        margin-bottom: 0.3em;
+    }
+}

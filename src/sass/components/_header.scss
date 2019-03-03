@@ -1,0 +1,45 @@
+// header
+.main-header {
+    @extend %grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    .link-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-top: 3vh;
+    }
+
+    .link-item {
+        display: inline-block;
+        margin-left: 1.2vw;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+
+    .link {
+        display: inline-block;
+        font-family: 'Gotham', sans-serif;
+        font-weight: 300;
+        font-size: 1vw;
+        color: black;
+        transition: all ease 200ms;
+
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: 0.5;
+            color: $color-blue;
+        }
+
+        @include md {
+            display: none;
+        }
+    }
+}

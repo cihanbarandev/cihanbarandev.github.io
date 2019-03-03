@@ -1,0 +1,28 @@
+// typography
+body {
+    color: $color-black;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1vw;
+
+    @include md {
+        font-size: 1.5vw;
+    }
+
+    @include xs {
+        font-size: 4vw;
+    }
+}
+
+a {
+    color: $color-blue;
+    transition: all ease 200ms;
+
+    &:hover,
+    &:active,
+    &:focus {
+        opacity: 0.5;
+        color: $color-blue;
+    }
+}
