@@ -1,0 +1,80 @@
+// hero
+// hero
+.hero {
+    .title {
+        display: inline-block;
+        font-family: 'AvantGarde', sans-serif;
+        font-size: 8vw;
+        -webkit-text-fill-color: $color-white-2;
+        -webkit-text-stroke-color: $color-blue;
+        -webkit-text-stroke-width: 0.1vw;
+        line-height: 1;
+        font-weight: bold;
+        position: relative;
+        margin-top: 31vh;
+
+        @include md {
+            width: 55%;
+            font-size: 15vw;
+            -webkit-text-stroke-width: 2px;
+            margin-top: 20vh;
+            margin-bottom: 8vh;
+        }
+
+        @include xs {
+            width: 70%;
+            font-size: 20vw;
+            -webkit-text-stroke-width: 2px;
+            margin-top: 12vh;
+            margin-bottom: 9vh;
+        }
+    }
+
+    .subtitle {
+        -webkit-text-fill-color: initial;
+        -webkit-text-stroke-width: initial;
+        -webkit-text-stroke-color: initial;
+        display: inline-block;
+        font-family: 'AvantGarde', sans-serif;
+        font-weight: bold;
+        line-height: 1.4;
+        text-align: right;
+        position: absolute;
+        font-size: 2vw;
+        right: 0;
+        top: 100%;
+        width: 100%;
+
+        @include md {
+            right: 10%;
+            font-size: 4vw;
+        }
+
+        @include xs {
+            right: 5%;
+            font-size: 6vw;
+        }
+    }
+
+    .text {
+        width: 15%;
+        font-size: 1vw;
+        margin-left: 6vw;
+        margin-top: 10.1vh;
+        font-family: 'GothamBook', sans-serif;
+        line-height: 1.2;
+
+        @include md {
+            width: 35%;
+            font-size: 2vw;
+            margin-left: 0;
+        }
+
+        @include xs {
+            width: 60%;
+            font-size: 4vw;
+            margin-top: 13vh;
+            margin-left: 14vw;
+        }
+    }
+}

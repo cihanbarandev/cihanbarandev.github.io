@@ -1,0 +1,108 @@
+// about
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include md {
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper:first-of-type {
+        @include md {
+            order: 1;
+        }
+    }
+}
+
+
+// quot-box
+.quot-box {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        width: 48%;
+        font-family: 'AvantGarde', sans-serif;
+        font-weight: bold;
+
+        @include md {
+            width: 64%;
+        }
+
+        @include xs {
+            width: 91%;
+        }
+    }
+
+    .text {}
+
+    .teller {
+        text-align: right;
+        margin-right: 13%;
+
+        @include xs {
+            margin-right: 6%;
+        }
+    }
+}
+
+// about-box
+.about-box {
+    @extend %clearfix;
+    line-height: 1.3;
+    width: 90%;
+    float: right;
+
+    @include md {
+        width: 80%;
+        float: none;
+        margin: 0 auto 10em;
+    }
+
+    @include sm {
+        margin: 0 auto 5em;
+    }
+
+    @include xs {
+        width: 100%;
+        margin: 0 0 6em;
+    }
+
+    .title {
+        font-family: 'AvantGarde', sans-serif;
+        font-weight: bold;
+        font-size: 4.5vw;
+        text-transform: uppercase;
+        margin-bottom: 0.30em;
+
+        @include xs {
+            font-size: 12vw;
+        }
+    }
+
+    .text {
+        margin-bottom: 1em;
+    }
+
+    .list {}
+
+    .item {
+        margin-bottom: 0.35em;
+    }
+
+    .subtitle {
+        font-family: 'AvantGarde', sans-serif;
+        font-weight: bold;
+        font-size: 1.4vw;
+
+        @include xs {
+            font-size: 4vw;
+        }
+
+    }
+
+    .info {}
+}
