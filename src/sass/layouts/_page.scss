@@ -2,15 +2,8 @@
 .page {
     @extend %clearfix;
     position: relative;
-    margin-bottom: 17vw;
 
-    @include md {
-        margin-bottom: 15vw;
-    }
 
-    @include xs {
-        margin-bottom: 8em;
-    }
 }
 
 
@@ -21,13 +14,29 @@
 
 .page.projects-page {}
 
-.page.project-page {}
+.page.project-page {
+    padding: 10vw 0;
 
-.page.experience-page {}
+    @include md {
+        padding: 8vw 0;
+    }
 
-.page.skills-page {}
+    @include xs {
+        padding: 5vw 0;
+    }
+}
 
-.page.about-page {}
+.page.experience-page {
+    padding: 5vw 0;
+}
+
+.page.skills-page {
+    padding: 5vw 0;
+}
+
+.page.about-page {
+    padding: 8vw 0;
+}
 
 .page.contact-page {
     height: 100%;
