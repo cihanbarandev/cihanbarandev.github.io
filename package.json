@@ -25,13 +25,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/c1hanbaran/cihan-portfolio.git"
+    "url": "git+https://github.com/cihanbarandev/cihan-portfolio-2019.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/c1hanbaran/cihan-portfolio/issues"
+    "url": "https://github.com/cihanbarandev/cihan-portfolio-2019/issues"
   },
-  "homepage": "https://github.com/c1hanbaran/cihan-portfolio#readme"
+  "homepage": "https://github.com/cihanbarandev/cihan-portfolio-2019#readme"
 }
